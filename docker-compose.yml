@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - PERPLEXITY_API_KEY=${PERPLEXITY_API_KEY}
+    depends_on:
+      - redis
+    volumes:
+      - ./backend:/app
+    

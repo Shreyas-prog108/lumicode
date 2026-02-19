@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+openai
+redis
+aiohttp
+esprima
+pydantic
+python-dotenv

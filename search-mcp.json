@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "google-search": {
+      "command": "npx",
+      "args": ["-y", "@claw256/mcp-google-search"],
+      "env": {
+        "GOOGLE_API_KEY": "your_generated_api_key_here",
+        "GOOGLE_CSE_ID": "your_search_engine_id_here"
+      }
+    }
+  }
+}

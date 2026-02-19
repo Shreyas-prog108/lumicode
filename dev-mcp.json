@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "google-devknowledge": {
+      "command": "npx",
+      "args": ["-y", "@google/mcp-server-developer-knowledge"],
+      "env": {
+        "GOOGLE_API_KEY": "your_dev_knowledge_api_key_here",
+        "GOOGLE_CLOUD_PROJECT_ID": "your_gcp_project_id_here"
+      }
+    }
+  }
+}
